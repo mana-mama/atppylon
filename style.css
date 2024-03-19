@@ -845,20 +845,49 @@ u {
     text-decoration: underline;
 }
 
-div.article-container {
+div.article-topic-container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
     margin-block: 1rem;
     padding: 1.5rem;
     margin-inline: 15%;
     border-radius: 2rem;
     background: var(--color_2);
-
-    transition: all 0.3s;
 }
 
-div.article-container .content {
-    transition: all 0.3s;
+div.article-topic-container h1 {
+    border-bottom: 0.2rem solid black;
+    padding-top: 0;
+    margin: 0;
+    margin-left: 3%;
+    text-align: left;
 }
-        
+
+div.article-topic-container a {
+    font-size: 2rem;
+    color: var(--color_5);
+    background: var(--color_4);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-right: 2%;
+    min-width: 12rem;
+}
+
+div.article-topic-container a:hover {
+    color: var(--color_4);
+    background: var(--color_5);
+}
+
+div.article-container {
+    align-items: center;
+    margin-block: 1rem;
+    padding: 1.5rem;
+    margin-inline: 15%;
+    border-radius: 2rem;
+    background: var(--color_2);
+}
+
 div.article-container p.description {
     transition: all 0.3s;
     max-width: 100%;
@@ -886,6 +915,47 @@ div.article-container p.click {
 div.article-container p.click:hover {
     background: var(--color_5);
     color: var(--color_2);
+}
+
+.article-dir {
+    margin-left: 3%;
+    margin-top: 1rem;
+}
+
+.article-dir a {
+    color: black;
+}
+
+.article-dir a:hover {
+    text-decoration: underline;
+}
+
+.art-footer {
+    text-align: center;
+    font-size: 1.8rem;
+    padding: 2rem;
+    border-top: 0.2rem solid var(--color_3);
+}
+
+.art-footer p a {
+    color: black;
+    text-decoration: underline;
+}
+
+.art-footer .back-to-art {
+    color: black;
+    padding: 2rem;
+    background: var(--color_4);
+    border-radius: 4rem;
+
+    transition: 0.3s;
+}
+
+.art-footer .back-to-art:hover {
+    color: var(--color_4);
+    padding: 2rem;
+    background: var(--color_5);
+    border-radius: 4rem;
 }
 
 @media (max-width:1500px) {
